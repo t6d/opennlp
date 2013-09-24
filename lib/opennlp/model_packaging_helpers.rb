@@ -1,5 +1,5 @@
 module OpenNLP
-  module Models
+  module ModelPackagingHelpers
     module SentenceDetection
       def sentence_detection
         SentenceModel.load(File.join(root, 'support', 'tokenization.bin'))
