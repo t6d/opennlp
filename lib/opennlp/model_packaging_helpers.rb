@@ -23,5 +23,11 @@ module OpenNLP
         TokenNameFinderModel.load(File.join(root, 'support', 'named_entity_recognition', "#{entity_type}.bin"))
       end
     end
+
+    module Chunking
+      def chunking_model
+        ChunkerModel.load(File.join(root, 'support', 'chunking.bin'))
+      end
+    end
   end
 end
