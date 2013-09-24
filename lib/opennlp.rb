@@ -48,11 +48,11 @@ module OpenNLP
 
   ChunkerModel = Java::opennlp.tools.chunker.ChunkerModel
   ChunkerModel.extend(SimplifiedModelLoading)
-  ChunkerME = Java::opennlp.tools.chunker.ChunkerME
+  Chunker = Java::opennlp.tools.chunker.ChunkerME
 
   class Chunker
     def process(tokens, pos_tags)
-      chunk(tokens, tags).to_a
+      chunk(tokens, pos_tags).to_a
     end
   end
 end
