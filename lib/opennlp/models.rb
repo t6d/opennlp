@@ -1,5 +1,3 @@
-require_relative "../opennlp"
-
 module OpenNLP
   module Models
     module SentenceDetection
